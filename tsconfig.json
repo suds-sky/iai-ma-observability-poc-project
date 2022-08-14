@@ -3,7 +3,7 @@
     "target": "ES2018",
     "module": "commonjs",
     "lib": [
-      "es2018"
+      "es2018",
     ],
     "declaration": true,
     "strict": true,
@@ -19,9 +19,14 @@
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
+    "esModuleInterop": true,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "types": [
+      "node",
+      "jest"
+    ],
   },
   "exclude": [
     "node_modules",

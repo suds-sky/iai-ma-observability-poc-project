@@ -1,0 +1,12 @@
+type GetItemOutput {
+    id: ID!,
+    value: String!
+}
+
+type Query {
+    getItem(id: ID!): GetItemOutput!
+}
+
+schema {
+    query: Query
+}
